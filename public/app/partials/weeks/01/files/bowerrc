@@ -1,0 +1,4 @@
+// File: ./.bowerrc
+{
+    "directory" : "public/app/vendors"
+}
