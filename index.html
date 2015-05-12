@@ -24,7 +24,7 @@
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" ng-click="isCollapsed = !isCollapsed">
+                <button type="button" class="navbar-toggle collapsed" aria-expanded="false" aria-controls="navbar" ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -32,12 +32,12 @@
                 </button>
                 <a class="navbar-brand" href="#/">[Angular@tiempo]</a>
             </div>
-            <div collapse="!isCollapsed" id="navbar" class="navbar-collapse collapse">
+            <div collapse="navCollapsed" id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li><a href="#/">Home</a></li>
                     <li><a href="#/stack">Stack</a></li>
                     <li class="dropdown" dropdown>
-                        <a dropdown-toggle="" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Week 1-4 <span class="caret"></span></a>
+                        <a dropdown-toggle class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Week 1-4 <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="#/week1">Week 1</a></li>
                             <li><a href="#">Week 2</a></li>
@@ -46,7 +46,7 @@
                         </ul>
                     </li>
                     <li class="dropdown" dropdown>
-                        <a dropdown-toggle="" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Week 5-8 <span class="caret"></span></a>
+                        <a dropdown-toggle class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Week 5-8 <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="#">Week 5</a></li>
                             <li><a href="#">Week 6</a></li>
@@ -55,7 +55,7 @@
                         </ul>
                     </li>
                     <li class="dropdown" dropdown>
-                        <a dropdown-toggle="" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Week 9-12 <span class="caret"></span></a>
+                        <a dropdown-toggle class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Week 9-12 <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="#">Week 9</a></li>
                             <li><a href="#">Week 10</a></li>

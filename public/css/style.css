@@ -14,12 +14,12 @@ body {
 }
 
 .footer {
-    color: #fefefe;
-    position: absolute;
+    background-color: #333;
     bottom: 0;
+    color: #fefefe;
+    max-height: 150px;
+    position: absolute;
     width: 100%;
-    max-height: 120px;
-    background-color: #30ABD5;
 }
 
 .copyright {
@@ -29,7 +29,14 @@ body {
 }
 
 .copyright a {
-    color: #111;
+    color: #31c5c7;
+    transition: all 0.3s ease 0s;
+}
+
+.copyright a:hover {
+    border-bottom: 1px solid white;
+    color: #eee;
+    text-decoration: none;
 }
 
 article {
