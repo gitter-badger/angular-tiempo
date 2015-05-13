@@ -8,6 +8,12 @@ app.controller('mainController', function($scope) {
         $event.stopPropagation();
         $scope.status.isopen = !$scope.status.isopen;
     };
+
+    $scope.navCollapsed = true;
+    $scope.$on("$routeChangeSuccess", function(){
+        $scope.navCollapsed = true;
+    });
+
 });
 
 app.config(function($routeProvider, $locationProvider, hljsServiceProvider) {
